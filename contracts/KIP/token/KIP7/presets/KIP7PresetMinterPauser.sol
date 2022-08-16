@@ -83,7 +83,12 @@ contract KIP7PresetMinterPauser is Context, KIP13, AccessControlEnumerable, KIP7
      *
      * See {IKIP13} and {IERC165}.
      */
-    function supportsInterface(bytes4 interfaceId) public view override(KIP13, KIP7Burnable, KIP7Mintable, KIP7Pausable, AccessControlEnumerable) returns (bool) {
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(KIP13, KIP7Burnable, KIP7Mintable, KIP7Pausable, AccessControlEnumerable)
+        returns (bool)
+    {
         return
             interfaceId == type(IKIP7).interfaceId ||
             interfaceId == type(IKIP7Burnable).interfaceId ||

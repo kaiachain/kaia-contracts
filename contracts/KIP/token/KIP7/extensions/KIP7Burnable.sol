@@ -22,6 +22,7 @@ abstract contract KIP7Burnable is Context, KIP7, IKIP7Burnable {
     function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
         return interfaceId == type(IKIP7Burnable).interfaceId || KIP7.supportsInterface(interfaceId);
     }
+
     /**
      * @dev Destroys `amount` tokens from the caller.
      *
