@@ -76,7 +76,7 @@ abstract contract KIP17Pausable is KIP17, Pausable, AccessControlEnumerable, IKI
     /**
      * @dev Check if `account` has the assigned Pauser role via {AccessControl-hasRole}
      */
-    function isPauser(address _account) public view returns (bool) {
+    function isPauser(address _account) public view override returns (bool) {
         return hasRole(PAUSER_ROLE, _account);
     }
 
@@ -89,7 +89,7 @@ abstract contract KIP17Pausable is KIP17, Pausable, AccessControlEnumerable, IKI
      *
      * - caller must have the {AccessControl-DEFAULT_ADMIN_ROLE}
      */
-    function addPauser(address _account) public onlyRole(DEFAULT_ADMIN_ROLE) {
+    function addPauser(address _account) public override onlyRole(DEFAULT_ADMIN_ROLE) {
         grantRole(PAUSER_ROLE, _account);
     }
 
@@ -98,7 +98,7 @@ abstract contract KIP17Pausable is KIP17, Pausable, AccessControlEnumerable, IKI
      *
      * Emits a {RoleRevoked} event
      */
-    function renouncePauser() public {
+    function renouncePauser() public override {
         renounceRole(PAUSER_ROLE, msg.sender);
     }
 

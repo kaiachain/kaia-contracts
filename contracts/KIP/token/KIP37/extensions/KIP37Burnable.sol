@@ -36,7 +36,7 @@ abstract contract KIP37Burnable is KIP37, IKIP37Burnable {
         address account,
         uint256 id,
         uint256 amount
-    ) public virtual {
+    ) public virtual override {
         require(
             account == _msgSender() || isApprovedForAll(account, _msgSender()),
             "KIP37: caller is not owner nor approved"
@@ -61,7 +61,7 @@ abstract contract KIP37Burnable is KIP37, IKIP37Burnable {
         address account,
         uint256[] memory ids,
         uint256[] memory amounts
-    ) public virtual {
+    ) public virtual override {
         require(
             account == _msgSender() || isApprovedForAll(account, _msgSender()),
             "KIP37: caller is not owner nor approved"
