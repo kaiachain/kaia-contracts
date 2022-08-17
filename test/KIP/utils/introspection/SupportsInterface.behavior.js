@@ -1,5 +1,4 @@
 const { makeInterfaceId } = require('@openzeppelin/test-helpers');
-var should = require('chai').should();
 
 const INTERFACES = {
   KIP7: [
@@ -12,7 +11,7 @@ const INTERFACES = {
     'safeTransfer(address,uint256,bytes)',
     'safeTransfer(address,uint256)',
     'safeTransferFrom(address,address,uint256,bytes)',
-    'safeTransferFrom(address,address,uint256)'
+    'safeTransferFrom(address,address,uint256)',
   ],
   KIP13: [
     'supportsInterface(bytes4)',
@@ -86,7 +85,9 @@ const INTERFACES = {
 const INTERFACE_IDS = {};
 const FN_SIGNATURES = {};
 for (const k of Object.getOwnPropertyNames(INTERFACES)) {
-  INTERFACE_IDS[k] = makeInterfaceId.ERC165(INTERFACES[k]); //can't use kip13 as it requires to be included and exported in @openzeppelin/test-helpers(https://github.com/klaytn/klaytn-contracts/blob/klaytn-migration/node_modules/@openzeppelin/test-helpers/src/makeInterfaceId.js)
+  // can't use kip13 as it requires to be included and exported in @openzeppelin/test-helpers
+  // (https://github.com/klaytn/klaytn-contracts/blob/klaytn-migration/node_modules/@openzeppelin/test-helpers/src/makeInterfaceId.js)
+  INTERFACE_IDS[k] = makeInterfaceId.ERC165(INTERFACES[k]);
   for (const fnName of INTERFACES[k]) {
     // the interface id of a single function is equivalent to its function signature
     FN_SIGNATURES[fnName] = makeInterfaceId.ERC165([fnName]);
