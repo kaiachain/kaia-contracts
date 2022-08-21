@@ -35,7 +35,7 @@ import "./IKIP7Receiver.sol";
  *
  * See http://kips.klaytn.com/KIPs/kip-7-fungible_token
  */
-contract KIP7 is Context, KIP13, IKIP7, IKIP7Metadata {
+contract KIP7 is KIP13, Context, IKIP7, IKIP7Metadata {
     using Address for address;
 
     mapping(address => uint256) private _balances;

@@ -17,7 +17,7 @@ import "./IKIP37Pausable.sol";
  * period, or having an emergency switch for freezing all token transfers in the
  * event of a large bug.
  */
-abstract contract KIP37Pausable is KIP37, Pausable, AccessControlEnumerable, IKIP37Pausable {
+abstract contract KIP37Pausable is KIP37, AccessControlEnumerable, Pausable, IKIP37Pausable {
     bytes32 public constant PAUSER_ROLE = keccak256("KIP37_PAUSER_ROLE");
 
     mapping(uint256 => bool) private _tokenPaused;

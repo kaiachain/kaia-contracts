@@ -18,7 +18,7 @@ import "../../../interfaces/IKIP7Pausable.sol";
  * event of a large bug.
  * See http://kips.klaytn.com/KIPs/kip-7-fungible_token
  */
-abstract contract KIP7Pausable is KIP7, Pausable, AccessControlEnumerable, IKIP7Pausable {
+abstract contract KIP7Pausable is KIP7, AccessControlEnumerable, Pausable, IKIP7Pausable {
     bytes32 public constant PAUSER_ROLE = keccak256("KIP7_PAUSER_ROLE");
 
     /**
