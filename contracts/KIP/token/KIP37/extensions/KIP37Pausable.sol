@@ -17,7 +17,7 @@ import "./IKIP37Pausable.sol";
  * period, or having an emergency switch for freezing all token transfers in the
  * event of a large bug.
  */
-abstract contract KIP37Pausable is KIP37, Pausable, AccessControlEnumerable, IKIP37Pausable {
+abstract contract KIP37Pausable is KIP37, AccessControlEnumerable, Pausable, IKIP37Pausable {
     bytes32 public constant PAUSER_ROLE = keccak256("KIP37_PAUSER_ROLE");
 
     mapping(uint256 => bool) private _tokenPaused;
@@ -100,13 +100,13 @@ abstract contract KIP37Pausable is KIP37, Pausable, AccessControlEnumerable, IKI
      * - `id` must not be already paused
      * - caller must have the {PAUSER_ROLE}
      */
-    function pause(uint256 id) public virtual onlyRole(PAUSER_ROLE) {
+    function pause(uint256 id) public virtual override onlyRole(PAUSER_ROLE) {
         require(_tokenPaused[id] == false, "KIP37Pausable: token already paused");
         _tokenPaused[id] = true;
         emit TokenPaused(_msgSender(), id);
     }
 
-    function unpause(uint256 id) public virtual onlyRole(PAUSER_ROLE) {
+    function unpause(uint256 id) public virtual override onlyRole(PAUSER_ROLE) {
         require(_tokenPaused[id] == true, "KIP37Pausable: token already unpaused");
         _tokenPaused[id] = false;
         emit TokenUnpaused(_msgSender(), id);

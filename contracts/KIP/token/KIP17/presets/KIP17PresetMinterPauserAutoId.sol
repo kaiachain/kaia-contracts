@@ -31,10 +31,10 @@ import "../../../../utils/Counters.sol";
 contract KIP17PresetMinterPauserAutoId is
     Context,
     AccessControlEnumerable,
+    KIP17Pausable,
     KIP17Enumerable,
     KIP17Mintable,
-    KIP17Burnable,
-    KIP17Pausable
+    KIP17Burnable
 {
     using Counters for Counters.Counter;
 

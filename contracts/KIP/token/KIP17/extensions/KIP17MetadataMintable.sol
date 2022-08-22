@@ -52,7 +52,7 @@ abstract contract KIP17MetadataMintable is KIP17URIStorage, AccessControlEnumera
     /**
      * @dev See {IKIP17Mintable-isMinter}
      */
-    function isMinter(address account) public view returns (bool) {
+    function isMinter(address account) public view override returns (bool) {
         return hasRole(MINTER_ROLE, account);
     }
 
@@ -61,7 +61,7 @@ abstract contract KIP17MetadataMintable is KIP17URIStorage, AccessControlEnumera
      *
      * Emits a {RoleGranted} event
      */
-    function addMinter(address account) public onlyRole(DEFAULT_ADMIN_ROLE) {
+    function addMinter(address account) public override onlyRole(DEFAULT_ADMIN_ROLE) {
         grantRole(MINTER_ROLE, account);
     }
 
@@ -70,7 +70,7 @@ abstract contract KIP17MetadataMintable is KIP17URIStorage, AccessControlEnumera
      *
      * Emits a {RoleRevoked} event
      */
-    function renounceMinter() public {
+    function renounceMinter() public override {
         renounceRole(MINTER_ROLE, _msgSender());
     }
 }

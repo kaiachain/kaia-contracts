@@ -24,7 +24,7 @@ import "../../../../utils/cryptography/ECDSA.sol";
  * By default, token balance does not account for voting power. This makes transfers cheaper. The downside is that it
  * requires users to delegate to themselves in order to activate checkpoints and have their voting power tracked.
  */
-abstract contract KIP7Votes is KIP7Permit, IVotes {
+abstract contract KIP7Votes is IVotes, KIP7Permit {
     struct Checkpoint {
         uint32 fromBlock;
         uint224 votes;

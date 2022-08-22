@@ -9,8 +9,8 @@ pragma solidity ^0.8.0;
 import "../../access/AccessControl.sol";
 import "../utils/introspection/KIP13.sol";
 
-abstract contract KAccessControl is AccessControl, KIP13 {
-    function supportsInterface(bytes4 interfaceId) public view virtual override(AccessControl, KIP13) returns (bool) {
+abstract contract KAccessControl is KIP13, AccessControl {
+    function supportsInterface(bytes4 interfaceId) public view virtual override(KIP13, AccessControl) returns (bool) {
         return super.supportsInterface(interfaceId);
     }
 }

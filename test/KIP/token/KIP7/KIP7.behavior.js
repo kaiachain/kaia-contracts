@@ -26,7 +26,7 @@ function shouldBehaveLikeKIP7 (
   recipient,
   anotherAccount,
 ) {
-  shouldSupportInterfaces(['ERC165', 'KIP13', 'KIP7'])
+  shouldSupportInterfaces(['ERC165', 'KIP13', 'KIP7']);
 
   describe('total supply', function () {
     it('returns the total amount of tokens', async function () {

@@ -28,7 +28,7 @@ abstract contract KIP17Burnable is Context, KIP17, IKIP17Burnable {
      *
      * - The caller must be the current owner, an authorized operator, or the approved address for `tokenId`
      */
-    function burn(uint256 tokenId) public virtual {
+    function burn(uint256 tokenId) public virtual override {
         //solhint-disable-next-line max-line-length
         require(_isApprovedOrOwner(_msgSender(), tokenId), "ERC721Burnable: caller is not owner nor approved");
         _burn(tokenId);

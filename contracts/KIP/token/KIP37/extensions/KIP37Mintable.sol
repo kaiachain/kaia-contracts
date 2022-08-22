@@ -102,7 +102,7 @@ abstract contract KIP37Mintable is KIP37, KIP37URIStorage, IKIP37Mintable, Acces
         uint256 id,
         address to,
         uint256 amount
-    ) public virtual {
+    ) public virtual override {
         require(_exists(id), "KIP37: nonexistent token");
         require(hasRole(MINTER_ROLE, _msgSender()), "KIP37: must have minter role to mint");
 
@@ -124,7 +124,7 @@ abstract contract KIP37Mintable is KIP37, KIP37URIStorage, IKIP37Mintable, Acces
         uint256 id,
         address[] memory toList,
         uint256[] memory amounts
-    ) public virtual {
+    ) public virtual override {
         require(_exists(id), "KIP37: nonexistent token");
         require(hasRole(MINTER_ROLE, _msgSender()), "KIP37: must have minter role to mint");
         require(toList.length == amounts.length, "KIP37: toList and amounts length mismatch");
@@ -151,7 +151,7 @@ abstract contract KIP37Mintable is KIP37, KIP37URIStorage, IKIP37Mintable, Acces
         address to,
         uint256[] memory ids,
         uint256[] memory amounts
-    ) public virtual {
+    ) public virtual override {
         for (uint256 i = 0; i < ids.length; ++i) {
             require(_exists(ids[i]), "KIP37: nonexistent token");
         }

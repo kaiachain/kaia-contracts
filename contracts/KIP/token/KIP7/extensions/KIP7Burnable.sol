@@ -22,6 +22,7 @@ abstract contract KIP7Burnable is Context, KIP7, IKIP7Burnable {
     function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
         return interfaceId == type(IKIP7Burnable).interfaceId || KIP7.supportsInterface(interfaceId);
     }
+
     /**
      * @dev Destroys `amount` tokens from the caller.
      *
@@ -31,7 +32,7 @@ abstract contract KIP7Burnable is Context, KIP7, IKIP7Burnable {
      *
      * - caller's balance must be greater than or equal to `_amount`
      */
-    function burn(uint256 amount) public virtual {
+    function burn(uint256 amount) public virtual override {
         _burn(_msgSender(), amount);
     }
 
@@ -46,7 +47,7 @@ abstract contract KIP7Burnable is Context, KIP7, IKIP7Burnable {
      * - the caller must have allowance for ``accounts``'s tokens of at least
      * `amount`.
      */
-    function burnFrom(address account, uint256 amount) public virtual {
+    function burnFrom(address account, uint256 amount) public virtual override {
         _spendAllowance(account, _msgSender(), amount);
         _burn(account, amount);
     }

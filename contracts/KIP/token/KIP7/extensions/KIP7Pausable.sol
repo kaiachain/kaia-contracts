@@ -18,7 +18,7 @@ import "../../../interfaces/IKIP7Pausable.sol";
  * event of a large bug.
  * See http://kips.klaytn.com/KIPs/kip-7-fungible_token
  */
-abstract contract KIP7Pausable is KIP7, Pausable, AccessControlEnumerable, IKIP7Pausable {
+abstract contract KIP7Pausable is KIP7, AccessControlEnumerable, Pausable, IKIP7Pausable {
     bytes32 public constant PAUSER_ROLE = keccak256("KIP7_PAUSER_ROLE");
 
     /**
@@ -77,7 +77,7 @@ abstract contract KIP7Pausable is KIP7, Pausable, AccessControlEnumerable, IKIP7
     /**
      * @dev Check if `account` has the assigned Pauser role via {AccessControl-hasRole}
      */
-    function isPauser(address account) public view returns (bool) {
+    function isPauser(address account) public view override returns (bool) {
         return hasRole(PAUSER_ROLE, account);
     }
 
@@ -90,7 +90,7 @@ abstract contract KIP7Pausable is KIP7, Pausable, AccessControlEnumerable, IKIP7
      *
      * - caller must have the {AccessControl-DEFAULT_ADMIN_ROLE}
      */
-    function addPauser(address account) public onlyRole(DEFAULT_ADMIN_ROLE) {
+    function addPauser(address account) public override onlyRole(DEFAULT_ADMIN_ROLE) {
         grantRole(PAUSER_ROLE, account);
     }
 
@@ -99,7 +99,7 @@ abstract contract KIP7Pausable is KIP7, Pausable, AccessControlEnumerable, IKIP7
      *
      * Emits a {RoleRevoked} event
      */
-    function renouncePauser() public {
+    function renouncePauser() public override {
         renounceRole(PAUSER_ROLE, msg.sender);
     }
 
