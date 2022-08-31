@@ -1,7 +1,7 @@
 {
   "name": "@klaytn/contracts",
   "description": "Secure Smart Contract library for Solidity",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "files": [
     "**/*.sol",
     "/build/contracts/*.json",
