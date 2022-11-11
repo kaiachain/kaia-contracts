@@ -150,7 +150,7 @@ contract('KIP37', function (accounts) {
       it('reverts when burning a non-existent token id', async function () {
         await expectRevert(
           this.token.burn(tokenHolder, tokenId, mintAmount),
-          'KIP37: burn amount exceeds balance',
+          'KIP37: burn amount exceeds totalSupply',
         );
       });
 
@@ -161,7 +161,7 @@ contract('KIP37', function (accounts) {
 
         await expectRevert(
           this.token.burn(tokenHolder, tokenId, mintAmount.addn(1)),
-          'KIP37: burn amount exceeds balance',
+          'KIP37: burn amount exceeds totalSupply',
         );
       });
 
@@ -238,7 +238,7 @@ contract('KIP37', function (accounts) {
             tokenBatchIds,
             burnAmounts,
           ),
-          'KIP37: burn amount exceeds balance',
+          'KIP37: burn amount exceeds totalSupply',
         );
       });
 

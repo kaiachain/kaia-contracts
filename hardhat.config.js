@@ -75,7 +75,7 @@ module.exports = {
   },
   paths: {
     sources: './contracts',
-    tests: './test/KIP/token/KIP7',
+    tests: './test/KIP/token/KIP37/',
     cache: './cache',
     artifacts: './artifacts',
   },

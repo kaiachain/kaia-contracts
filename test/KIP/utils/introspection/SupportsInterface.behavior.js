@@ -61,6 +61,7 @@ const INTERFACES = {
     'isApprovedForAll(address,address)',
     'safeTransferFrom(address,address,uint256,uint256,bytes)',
     'safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)',
+    'totalSupply(uint256)',
   ],
   KIP37Receiver: [
     'onKIP37Received(address,address,uint256,uint256,bytes)',

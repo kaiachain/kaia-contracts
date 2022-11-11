@@ -1,8 +1,7 @@
 const { BN } = require('@openzeppelin/test-helpers');
 
 const { expect } = require('chai');
-
-const KIP37SupplyMock = artifacts.require('KIP37SupplyMock');
+const KIP37Mock = artifacts.require('KIP37Mock');
 
 contract('KIP37Supply', function (accounts) {
   const [holder] = accounts;
@@ -16,13 +15,10 @@ contract('KIP37Supply', function (accounts) {
   const secondTokenAmount = new BN('23');
 
   beforeEach(async function () {
-    this.token = await KIP37SupplyMock.new(uri);
+    this.token = await KIP37Mock.new(uri);
   });
 
   context('before mint', function () {
-    it('exist', async function () {
-      expect(await this.token.exists(firstTokenId)).to.be.equal(false);
-    });
 
     it('totalSupply', async function () {
       expect(
@@ -41,11 +37,6 @@ contract('KIP37Supply', function (accounts) {
           '0x',
         );
       });
-
-      it('exist', async function () {
-        expect(await this.token.exists(firstTokenId)).to.be.equal(true);
-      });
-
       it('totalSupply', async function () {
         expect(
           await this.token.totalSupply(firstTokenId),
@@ -61,11 +52,6 @@ contract('KIP37Supply', function (accounts) {
           [firstTokenAmount, secondTokenAmount],
           '0x',
         );
-      });
-
-      it('exist', async function () {
-        expect(await this.token.exists(firstTokenId)).to.be.equal(true);
-        expect(await this.token.exists(secondTokenId)).to.be.equal(true);
       });
 
       it('totalSupply', async function () {
@@ -91,10 +77,6 @@ contract('KIP37Supply', function (accounts) {
         await this.token.burn(holder, firstTokenId, firstTokenAmount);
       });
 
-      it('exist', async function () {
-        expect(await this.token.exists(firstTokenId)).to.be.equal(false);
-      });
-
       it('totalSupply', async function () {
         expect(
           await this.token.totalSupply(firstTokenId),
@@ -114,13 +96,6 @@ contract('KIP37Supply', function (accounts) {
           holder,
           [firstTokenId, secondTokenId],
           [firstTokenAmount, secondTokenAmount],
-        );
-      });
-
-      it('exist', async function () {
-        expect(await this.token.exists(firstTokenId)).to.be.equal(false);
-        expect(await this.token.exists(secondTokenId)).to.be.equal(
-          false,
         );
       });
 
