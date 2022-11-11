@@ -28,7 +28,7 @@ abstract contract KIP17Royalty is KIP17, ERC2981 {
     }
 
     /**
-     * @dev See {KIP7-_burn}. This override additionally clears the royalty information for the token.
+     * @dev See {KIP17-_burn}. This override additionally clears the royalty information for the token.
      */
     function _burn(uint256 tokenId) internal virtual override {
         super._burn(tokenId);
