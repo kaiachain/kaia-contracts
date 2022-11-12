@@ -62,6 +62,12 @@ contract('KIP37', function (accounts) {
           });
         });
 
+        it('token id should have totalSupply', async function () {
+          expect(
+            await this.token.totalSupply(tokenId),
+          ).to.be.bignumber.equal(mintAmount);
+        });
+
         it('credits the minted amount of tokens', async function () {
           expect(
             await this.token.balanceOf(tokenHolder, tokenId),
@@ -122,6 +128,14 @@ contract('KIP37', function (accounts) {
             from: ZERO_ADDRESS,
             to: tokenBatchHolder,
           });
+        });
+
+        it('tokens should have total Supplies', async function () {
+          for (let i = 0; i < tokenBatchIds.length; i++) {
+            expect(
+              await this.token.totalSupply(tokenBatchIds[i]),
+            ).to.be.bignumber.equal(mintAmounts[i]);
+          }
         });
 
         it('credits the minted batch of tokens', async function () {
@@ -189,6 +203,12 @@ contract('KIP37', function (accounts) {
             id: tokenId,
             amount: burnAmount,
           });
+        });
+
+        it('token id should have Supply burnt', async function () {
+          expect(
+            await this.token.totalSupply(tokenId),
+          ).to.be.bignumber.equal(mintAmount.sub(burnAmount));
         });
 
         it('accounts for both minting and burning', async function () {
@@ -266,6 +286,14 @@ contract('KIP37', function (accounts) {
             // ids: tokenBatchIds,
             // values: burnAmounts,
           });
+        });
+
+        it('tokens should have Supplies burnt', async function () {
+          for (let i = 0; i < tokenBatchIds.length; i++) {
+            expect(
+              await this.token.totalSupply(tokenBatchIds[i]),
+            ).to.be.bignumber.equal(mintAmounts[i].sub(burnAmounts[i]));
+          }
         });
 
         it('accounts for both minting and burning', async function () {
