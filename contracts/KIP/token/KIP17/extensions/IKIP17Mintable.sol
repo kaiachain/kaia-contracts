@@ -14,7 +14,7 @@ interface IKIP17Mintable {
      *
      * Requirements:
      *
-     * - caller must have the {KIP7Mintable-MINTER_ROLE}
+     * - caller must have the {KIP17Mintable-MINTER_ROLE}
      *
      * Emits a {Transfer} event with 0X0 as the `from` account
      */
@@ -32,7 +32,7 @@ interface IKIP17Mintable {
      *
      * Requirements:
      *
-     * - caller must have the {KIP7Mintable-MINTER_ROLE}
+     * - caller must have the {KIP17Mintable-MINTER_ROLE}
      */
     function addMinter(address account) external;
 

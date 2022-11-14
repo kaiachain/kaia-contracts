@@ -4,7 +4,7 @@
 pragma solidity ^0.8.0;
 
 /**
- * @dev Minting with URI extension of the KIP7 standard as defined in the KIP.
+ * @dev Minting with URI extension of the KIP17 standard as defined in the KIP.
  * See https://kips.klaytn.com/KIPs/kip-17#minting-with-uri-extension
  */
 interface IKIP17MetadataMintable {
@@ -14,7 +14,7 @@ interface IKIP17MetadataMintable {
      *
      * Requirements:
      *
-     * - caller must have the {KIP7Mintable-MINTER_ROLE}
+     * - caller must have the {KIP17Mintable-MINTER_ROLE}
      *
      * Emits a {Transfer} event with 0X0 as the `from` account
      */
@@ -36,7 +36,7 @@ interface IKIP17MetadataMintable {
      *
      * Requirements:
      *
-     * - caller must have the {KIP7Mintable-MINTER_ROLE}
+     * - caller must have the {KIP17Mintable-MINTER_ROLE}
      */
     function addMinter(address account) external;
 
