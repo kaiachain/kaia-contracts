@@ -126,6 +126,7 @@ interface IKIP37 is IKIP13 {
         uint256[] calldata amounts,
         bytes calldata data
     ) external;
+
     /**
         @notice Get the total supply of the token type requested.
         @param _id      ID of the token

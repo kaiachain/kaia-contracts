@@ -24,7 +24,7 @@ contract KIP37 is KIP13, IKIP37, IKIP37MetadataURI, Context {
 
     // Mapping from token ID to account balances
     mapping(uint256 => mapping(address => uint256)) private _balances;
-    
+
     // Mapping from token ID to  token's circulating supply
     mapping(uint256 => uint256) private _totalSupply;
 
@@ -65,7 +65,7 @@ contract KIP37 is KIP13, IKIP37, IKIP37MetadataURI, Context {
     function uri(uint256) public view virtual override returns (string memory) {
         return _uri;
     }
-    
+
     /**
      * @dev Total amount of tokens in with a given id.
      */
@@ -434,15 +434,14 @@ contract KIP37 is KIP13, IKIP37, IKIP37MetadataURI, Context {
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(
-        address operator,
+        address, /** operator */
         address from,
         address to,
         uint256[] memory ids,
         uint256[] memory amounts,
-        bytes memory data
+        bytes memory /** data */
     ) internal virtual {
-        
-        // updating circulatory supply of given token ID
+        // checks to update circulating supply of given token IDs
         if (from == address(0)) {
             for (uint256 i = 0; i < ids.length; ++i) {
                 _totalSupply[ids[i]] += amounts[i];
@@ -455,9 +454,9 @@ contract KIP37 is KIP13, IKIP37, IKIP37MetadataURI, Context {
                 uint256 amount = amounts[i];
                 uint256 supply = _totalSupply[id];
                 require(supply >= amount, "KIP37: burn amount exceeds totalSupply");
-            unchecked {
-                _totalSupply[id] = supply - amount;
-            }
+                unchecked {
+                    _totalSupply[id] = supply - amount;
+                }
             }
         }
     }

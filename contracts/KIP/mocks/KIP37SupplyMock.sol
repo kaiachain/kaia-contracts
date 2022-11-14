@@ -10,6 +10,4 @@ import "../token/KIP37/extensions/KIP37Supply.sol";
 
 contract KIP37SupplyMock is KIP37Mock, KIP37Supply {
     constructor(string memory uri) KIP37Mock(uri) {}
-
-
 }

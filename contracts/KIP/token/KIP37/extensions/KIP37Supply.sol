@@ -15,7 +15,6 @@ import "../KIP37.sol";
  * verified that either it already exists/minted or not.
  */
 abstract contract KIP37Supply is KIP37 {
-
     /**
      * @dev Indicates whether any token exist with a given id, or not.
      */
