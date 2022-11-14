@@ -62,6 +62,12 @@ contract('KIP37', function (accounts) {
           });
         });
 
+        it('token id should have totalSupply', async function () {
+          expect(
+            await this.token.totalSupply(tokenId),
+          ).to.be.bignumber.equal(mintAmount);
+        });
+
         it('credits the minted amount of tokens', async function () {
           expect(
             await this.token.balanceOf(tokenHolder, tokenId),
@@ -124,6 +130,14 @@ contract('KIP37', function (accounts) {
           });
         });
 
+        it('tokens should have total Supplies', async function () {
+          for (let i = 0; i < tokenBatchIds.length; i++) {
+            expect(
+              await this.token.totalSupply(tokenBatchIds[i]),
+            ).to.be.bignumber.equal(mintAmounts[i]);
+          }
+        });
+
         it('credits the minted batch of tokens', async function () {
           const holderBatchBalances = await this.token.balanceOfBatch(
             new Array(tokenBatchIds.length).fill(tokenBatchHolder),
@@ -150,7 +164,7 @@ contract('KIP37', function (accounts) {
       it('reverts when burning a non-existent token id', async function () {
         await expectRevert(
           this.token.burn(tokenHolder, tokenId, mintAmount),
-          'KIP37: burn amount exceeds balance',
+          'KIP37: burn amount exceeds totalSupply',
         );
       });
 
@@ -161,7 +175,7 @@ contract('KIP37', function (accounts) {
 
         await expectRevert(
           this.token.burn(tokenHolder, tokenId, mintAmount.addn(1)),
-          'KIP37: burn amount exceeds balance',
+          'KIP37: burn amount exceeds totalSupply',
         );
       });
 
@@ -189,6 +203,12 @@ contract('KIP37', function (accounts) {
             id: tokenId,
             amount: burnAmount,
           });
+        });
+
+        it('token id should have Supply burnt', async function () {
+          expect(
+            await this.token.totalSupply(tokenId),
+          ).to.be.bignumber.equal(mintAmount.sub(burnAmount));
         });
 
         it('accounts for both minting and burning', async function () {
@@ -238,7 +258,7 @@ contract('KIP37', function (accounts) {
             tokenBatchIds,
             burnAmounts,
           ),
-          'KIP37: burn amount exceeds balance',
+          'KIP37: burn amount exceeds totalSupply',
         );
       });
 
@@ -266,6 +286,14 @@ contract('KIP37', function (accounts) {
             // ids: tokenBatchIds,
             // values: burnAmounts,
           });
+        });
+
+        it('tokens should have Supplies burnt', async function () {
+          for (let i = 0; i < tokenBatchIds.length; i++) {
+            expect(
+              await this.token.totalSupply(tokenBatchIds[i]),
+            ).to.be.bignumber.equal(mintAmounts[i].sub(burnAmounts[i]));
+          }
         });
 
         it('accounts for both minting and burning', async function () {

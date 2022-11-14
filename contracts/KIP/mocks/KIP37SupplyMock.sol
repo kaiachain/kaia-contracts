@@ -10,15 +10,4 @@ import "../token/KIP37/extensions/KIP37Supply.sol";
 
 contract KIP37SupplyMock is KIP37Mock, KIP37Supply {
     constructor(string memory uri) KIP37Mock(uri) {}
-
-    function _beforeTokenTransfer(
-        address operator,
-        address from,
-        address to,
-        uint256[] memory ids,
-        uint256[] memory amounts,
-        bytes memory data
-    ) internal virtual override(KIP37, KIP37Supply) {
-        super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
-    }
 }
