@@ -9,7 +9,7 @@ import "./IKIP37Mintable.sol";
 import "../../../../access/AccessControlEnumerable.sol";
 
 /**
- * @dev Extension of KIP17 that supports permissioned token type creation and token minting
+ * @dev Extension of KIP37 that supports permissioned token type creation and token minting
  * See http://kips.klaytn.com/KIPs/kip-37#minting-extension
  */
 abstract contract KIP37Mintable is KIP37, KIP37URIStorage, IKIP37Mintable, AccessControlEnumerable {
