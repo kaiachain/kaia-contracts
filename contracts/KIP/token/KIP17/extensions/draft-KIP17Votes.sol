@@ -18,7 +18,7 @@ import "../../../../governance/utils/Votes.sol";
  *
  * _Available since v4.5._
  */
-abstract contract KIP17Votes is Votes, KIP17 {
+abstract contract KIP17Votes is KIP17, Votes {
     /**
      * @dev Adjusts votes when tokens are transferred.
      *
