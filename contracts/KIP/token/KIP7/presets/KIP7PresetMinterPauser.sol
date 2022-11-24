@@ -26,7 +26,7 @@ import "../extensions/KIP7Pausable.sol";
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
-contract KIP7PresetMinterPauser is KIP13, Context, AccessControlEnumerable, KIP7Mintable, KIP7Burnable, KIP7Pausable {
+contract KIP7PresetMinterPauser is Context, KIP13,  AccessControlEnumerable, KIP7Mintable, KIP7Burnable, KIP7Pausable {
     /**
      * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `PAUSER_ROLE` to the
      * account that deploys the contract.

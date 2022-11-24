@@ -18,7 +18,7 @@ import "../../../token/ERC721/IERC721Receiver.sol";
  * the Metadata extension, but not including the Enumerable extension, which is available separately as
  * {KIP17Enumerable}.
  */
-contract KIP17 is KIP13, Context, IKIP17, IKIP17Metadata {
+contract KIP17 is Context, KIP13, IKIP17, IKIP17Metadata {
     using Address for address;
     using Strings for uint256;
 
