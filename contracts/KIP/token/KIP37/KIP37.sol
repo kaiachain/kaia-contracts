@@ -19,7 +19,7 @@ import "../../utils/introspection/KIP13.sol";
  * Originally based on code by Enjin: https://github.com/enjin/erc-1155
  *
  */
-contract KIP37 is KIP13, IKIP37, IKIP37MetadataURI, Context {
+contract KIP37 is Context, KIP13, IKIP37, IKIP37MetadataURI {
     using Address for address;
 
     // Mapping from token ID to account balances
