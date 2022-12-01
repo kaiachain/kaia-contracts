@@ -43,7 +43,7 @@ To keep your system secure, you should **always** use the installed code as-is, 
 
 ## Contribute
 
-In line with our commitment to decentralization, all Klaytn codebase and its documentations are completely open source. Klaytn always welcomes your contribution. Anyone can view, edit, fix its contents and make suggestions. You can either create a pull request on GitHub or use GitBook. Make sure to sign our [Contributor License Agreement (CLA)](https://cla-assistant.io/klaytn/klaytn-contracts) first and there are also a few guidelines our contributors would check out before contributing:
+In line with our commitment to decentralization, all Klaytn codebase and its documentations are completely open source. Klaytn always welcomes your contribution. Anyone can view, edit, fix its contents and make suggestions. You can either create a pull request on GitHub or use GitBook. Make sure to sign our Contributor License Agreement (CLA) first and there are also a few guidelines our contributors would check out before contributing:
 
 - [Contribution Guide](./CONTRIBUTING.md)
 - [License](./LICENSE)
