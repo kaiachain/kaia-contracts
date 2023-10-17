@@ -1,6 +1,6 @@
 # Branch name will be changed
 
-We will change the `master` branch to `main` on Dec 15, 2022.
+We will change the `main` branch to `main` on Dec 15, 2022.
 After the branch policy change, please check your local or forked repository settings.
 
 # Klaytn Contracts
@@ -22,7 +22,7 @@ Please refer to [this](https://kips.klaytn.com/token) link for the mapping of Et
 $ npm install @klaytn/contracts
 ```
 
-An alternative to npm is to use the GitHub repository `klaytn/klaytn-contracts` to retrieve the contracts. When doing this, make sure to specify the tag for a release such as `v1.0.0`, instead of using the `master` branch.
+An alternative to npm is to use the GitHub repository `klaytn/klaytn-contracts` to retrieve the contracts. When doing this, make sure to specify the tag for a release such as `v1.0.0`, instead of using the `main` branch.
 
 ### Usage
 
