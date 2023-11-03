@@ -1,8 +1,3 @@
-# Branch name will be changed
-
-We will change the `main` branch to `main` on Dec 15, 2022.
-After the branch policy change, please check your local or forked repository settings.
-
 # Klaytn Contracts
 
 [![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.klaytn.foundation/)
