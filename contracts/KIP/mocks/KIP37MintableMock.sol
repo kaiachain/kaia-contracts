@@ -18,7 +18,7 @@ contract KIP37MintableMock is KIP37Mintable {
     function create(
         uint256 id,
         uint256 initialSupply,
-        string calldata uri_
+        string memory uri_
     ) public override returns (bool) {
         return super.create(id, initialSupply, uri_);
     }
@@ -33,16 +33,16 @@ contract KIP37MintableMock is KIP37Mintable {
 
     function mint(
         uint256 id,
-        address[] calldata toList,
-        uint256[] calldata amounts
+        address[] memory toList,
+        uint256[] memory amounts
     ) public override {
         super.mint(id, toList, amounts);
     }
 
     function mintBatch(
         address to,
-        uint256[] calldata ids,
-        uint256[] calldata amounts
+        uint256[] memory ids,
+        uint256[] memory amounts
     ) public override {
         super.mintBatch(to, ids, amounts);
     }
