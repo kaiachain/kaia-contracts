@@ -1,5 +1,5 @@
 {
-  "name": "@klaytn/contracts",
+  "name": "@kaiachain/contracts",
   "description": "Secure Smart Contract library for Solidity",
   "version": "1.0.6",
   "files": [
@@ -8,7 +8,7 @@
     "!/contracts/mocks/**/*"
   ],
   "bin": {
-    "klaytn-contracts-migrate-imports": "scripts/migrate-imports.js"
+    "kaia-contracts-migrate-imports": "scripts/migrate-imports.js"
   },
   "scripts": {
     "compile": "hardhat compile",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/klaytn/klaytn-contracts.git"
+    "url": "https://github.com/kaiachain/kaia-contracts.git"
   },
   "keywords": [
     "solidity",
@@ -34,15 +34,15 @@
     "smart",
     "contracts",
     "security",
-    "klaytn",
-    "klaytn"
+    "kaia",
+    "kaiachain"
   ],
-  "author": "Klaytn Community <developer@klaytn.foundation>",
+  "author": "Kaia Community <developer@kaia.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/klaytn/klaytn-contracts/issues"
+    "url": "https://github.com/kaiachain/kaia-contracts/issues"
   },
-  "homepage": "https://github.com/klaytn/klaytn-contracts#readme",
+  "homepage": "https://github.com/kaiachain/kaia-contracts#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-truffle5": "^2.0.5",
     "@nomiclabs/hardhat-web3": "^2.0.0",

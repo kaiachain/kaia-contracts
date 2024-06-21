@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP17/extensions/IKIP17MetadataMintable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP17/extensions/IKIP17MetadataMintable.sol)
 
 pragma solidity ^0.8.0;
 
 /**
  * @dev Minting with URI extension of the KIP17 standard as defined in the KIP.
- * See https://kips.klaytn.com/KIPs/kip-17#minting-with-uri-extension
+ * See https://kips.kaia.io/KIPs/kip-17#minting-with-uri-extension
  */
 interface IKIP17MetadataMintable {
     /**

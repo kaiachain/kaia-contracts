@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library (KIP/access/KAccessControl.sol)
+// Kaia Contract Library (KIP/access/KAccessControl.sol)
 // Based on OpenZeppelin Contracts (last updated v4.6.0) (access/AccessControl.sol)
 
 pragma solidity ^0.8.0;

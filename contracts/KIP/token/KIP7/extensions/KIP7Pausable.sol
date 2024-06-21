@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP7/extensions/KIP7Pausable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP7/extensions/KIP7Pausable.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC20/extensions/ERC20Pausable.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
@@ -16,7 +16,7 @@ import "../../../interfaces/IKIP7Pausable.sol";
  * Useful for scenarios such as preventing transfers until the end of an evaluation
  * period, or having an emergency switch for freezing all token transfers in the
  * event of a large bug.
- * See http://kips.klaytn.com/KIPs/kip-7-fungible_token
+ * See http://kips.kaia.io/KIPs/kip-7-fungible_token
  */
 abstract contract KIP7Pausable is KIP7, AccessControlEnumerable, Pausable, IKIP7Pausable {
     bytes32 public constant PAUSER_ROLE = keccak256("KIP7_PAUSER_ROLE");

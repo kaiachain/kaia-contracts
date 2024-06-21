@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP37/presets/KIP3PresetMinterPauser.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP37/presets/KIP3PresetMinterPauser.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC1155/presets/ERC1155PresetMinterPauser.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 

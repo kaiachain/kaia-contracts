@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/mocks/KIP7DecimalsMock.sol)
+// Kaia Contract Library v1.0.0 (KIP/mocks/KIP7DecimalsMock.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (mocks/ERC20DecimalsMock.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 

@@ -22,7 +22,7 @@ contract SenderTest2 {
     /*
      *  Deposit function
      */
-    /// @dev Fallback function that allows to deposit KLAY
+    /// @dev Fallback function that allows to deposit KAIA
     fallback() external payable {
         require(msg.value > 0, "Invalid value.");
     }

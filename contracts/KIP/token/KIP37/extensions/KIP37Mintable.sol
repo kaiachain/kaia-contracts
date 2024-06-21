@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP37/extensions/KIP37Mintable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP37/extensions/KIP37Mintable.sol)
 
 pragma solidity ^0.8.0;
 
@@ -10,7 +10,7 @@ import "../../../../access/AccessControlEnumerable.sol";
 
 /**
  * @dev Extension of KIP37 that supports permissioned token type creation and token minting
- * See http://kips.klaytn.com/KIPs/kip-37#minting-extension
+ * See http://kips.kaia.io/KIPs/kip-37#minting-extension
  */
 abstract contract KIP37Mintable is KIP37, KIP37URIStorage, IKIP37Mintable, AccessControlEnumerable {
     bytes32 public constant MINTER_ROLE = keccak256("KIP37_MINTER_ROLE");

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP7/extensions/IKIP7Metadata.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP7/extensions/IKIP7Metadata.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC20/extensions/IERC20Metadata.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
@@ -9,7 +9,7 @@ import "../IKIP7.sol";
 
 /**
  * @dev Extension of {KIP7} which exposes metadata functions.
- * See https://kips.klaytn.com/KIPs/kip-7#metadata-extension
+ * See https://kips.kaia.io/KIPs/kip-7#metadata-extension
  */
 interface IKIP7Metadata is IKIP7 {
     /**

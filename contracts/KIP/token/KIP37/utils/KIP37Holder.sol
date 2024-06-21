@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP37/utils/KIP37Holder.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP37/utils/KIP37Holder.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC1155/utils/ERC1155Holder.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 

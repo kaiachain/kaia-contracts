@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP17/KIP17.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP17/KIP17.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC721/ERC721.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
@@ -14,7 +14,7 @@ import "./IKIP17Receiver.sol";
 import "../../../token/ERC721/IERC721Receiver.sol";
 
 /**
- * @dev Implementation of https://kips.klaytn.com/KIPs/kip-17 Non-Fungible Token Standard, including
+ * @dev Implementation of https://kips.kaia.io/KIPs/kip-17 Non-Fungible Token Standard, including
  * the Metadata extension, but not including the Enumerable extension, which is available separately as
  * {KIP17Enumerable}.
  */

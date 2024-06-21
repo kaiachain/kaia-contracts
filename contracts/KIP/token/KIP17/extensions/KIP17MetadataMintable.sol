@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP17/extensions/KIP17MetadataMintable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP17/extensions/KIP17MetadataMintable.sol)
 
 pragma solidity ^0.8.0;
 
@@ -9,7 +9,7 @@ import "./IKIP17MetadataMintable.sol";
 
 /**
  * @dev Extension of KIP17 that supports permissioned token minting with linked URI
- * See https://kips.klaytn.com/KIPs/kip-17#minting-with-uri-extension
+ * See https://kips.kaia.io/KIPs/kip-17#minting-with-uri-extension
  */
 abstract contract KIP17MetadataMintable is KIP17URIStorage, AccessControlEnumerable, IKIP17MetadataMintable {
     bytes32 public constant MINTER_ROLE = keccak256("KIP17_MINTER_ROLE");

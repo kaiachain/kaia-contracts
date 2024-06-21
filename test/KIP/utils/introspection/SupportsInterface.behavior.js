@@ -87,7 +87,7 @@ const INTERFACE_IDS = {};
 const FN_SIGNATURES = {};
 for (const k of Object.getOwnPropertyNames(INTERFACES)) {
   // can't use kip13 as it requires to be included and exported in @openzeppelin/test-helpers
-  // (https://github.com/klaytn/klaytn-contracts/blob/klaytn-migration/node_modules/@openzeppelin/test-helpers/src/makeInterfaceId.js)
+  // (https://github.com/kaiachain/kaia-contracts/blob/kaia-migration/node_modules/@openzeppelin/test-helpers/src/makeInterfaceId.js)
   INTERFACE_IDS[k] = makeInterfaceId.ERC165(INTERFACES[k]);
   for (const fnName of INTERFACES[k]) {
     // the interface id of a single function is equivalent to its function signature
