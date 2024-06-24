@@ -2,7 +2,7 @@
 
 ## Bug Bounty
 
-Please report any security issues you find to `developer@kaia.io`.
+Please report any security issues you find to `developer@kaia.foundation`.
 
 Critical bug fixes will be backported to past major releases.
 

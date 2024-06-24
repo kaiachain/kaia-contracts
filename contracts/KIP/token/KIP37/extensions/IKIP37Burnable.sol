@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title KIP37 Non-Fungible Token Standard, optional burnable extension
- * @dev See http://kips.kaia.io/KIPs/kip-37#burning-extension
+ * @dev See http://kips.kaia.foundation/KIPs/kip-37#burning-extension
  */
 interface IKIP37Burnable {
     /**

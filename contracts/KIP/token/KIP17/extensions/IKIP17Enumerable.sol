@@ -9,7 +9,7 @@ import "../IKIP17.sol";
 
 /**
  * @title KIP-17 Non-Fungible Token Standard, optional enumeration extension
- * @dev See https://kips.kaia.io/KIPs/kip-17#enumeration-extension
+ * @dev See https://kips.kaia.foundation/KIPs/kip-17#enumeration-extension
  */
 interface IKIP17Enumerable is IKIP17 {
     /**

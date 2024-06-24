@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @dev Buring extension of the KIP7 standard as defined in the KIP.
- * See https://kips.kaia.io/KIPs/kip-7#burning-extension
+ * See https://kips.kaia.foundation/KIPs/kip-7#burning-extension
  */
 interface IKIP7Burnable {
     /**

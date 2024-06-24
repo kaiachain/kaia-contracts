@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @dev Pausing extension of the KIP37 standard as defined in the KIP.
- * See http://kips.kaia.io/KIPs/kip-37#pausing-extension
+ * See http://kips.kaia.foundation/KIPs/kip-37#pausing-extension
  */
 interface IKIP37Pausable {
     /**

@@ -1,7 +1,7 @@
 {
   "name": "@kaiachain/contracts",
   "description": "Secure Smart Contract library for Solidity",
-  "version": "1.0.6",
+  "version": "0.0.1",
   "files": [
     "/contracts/**/*.sol",
     "/build/contracts/*.json",
@@ -37,7 +37,7 @@
     "kaia",
     "kaiachain"
   ],
-  "author": "Kaia Community <developer@kaia.io>",
+  "author": "Kaia Community <developer@kaia.foundation>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaiachain/kaia-contracts/issues"

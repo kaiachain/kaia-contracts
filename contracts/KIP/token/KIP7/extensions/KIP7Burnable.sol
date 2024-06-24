@@ -13,7 +13,7 @@ import "./IKIP7Burnable.sol";
  * @dev Extension of KIP7 that allows token holders to destroy both their own
  * tokens and those that they have an allowance for, in a way that can be
  * recognized off-chain (via event analysis).
- * See https://kips.kaia.io/KIPs/kip-7#burning-extension
+ * See https://kips.kaia.foundation/KIPs/kip-7#burning-extension
  */
 abstract contract KIP7Burnable is Context, KIP7, IKIP7Burnable {
     /**

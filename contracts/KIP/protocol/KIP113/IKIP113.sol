@@ -32,6 +32,6 @@ interface IKIP113 {
     }
 
     /// @dev Returns all the stored addresses, public keys, and proof-of-possessions at once.
-    ///  _Note_ The function is not able to verify the validity of the public key and the proof-of-possession due to the lack of [EIP-2537](https://eips.ethereum.org/EIPS/eip-2537). See [validation](https://kips.kaia.io/KIPs/kip-113#validation) for off-chain validation.
+    ///  _Note_ The function is not able to verify the validity of the public key and the proof-of-possession due to the lack of [EIP-2537](https://eips.ethereum.org/EIPS/eip-2537). See [validation](https://kips.kaia.foundation/KIPs/kip-113#validation) for off-chain validation.
     function getAllBlsInfo() external view returns (address[] memory nodeIdList, BlsPublicKeyInfo[] memory pubkeyList);
 }
