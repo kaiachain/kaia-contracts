@@ -14,7 +14,7 @@ import "./IKIP17Receiver.sol";
 import "../../../token/ERC721/IERC721Receiver.sol";
 
 /**
- * @dev Implementation of https://kips.kaia.foundation/KIPs/kip-17 Non-Fungible Token Standard, including
+ * @dev Implementation of https://kips.kaia.io/KIPs/kip-17 Non-Fungible Token Standard, including
  * the Metadata extension, but not including the Enumerable extension, which is available separately as
  * {KIP17Enumerable}.
  */

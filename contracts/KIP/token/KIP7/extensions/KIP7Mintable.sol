@@ -9,7 +9,7 @@ import "../../../interfaces/IKIP7Mintable.sol";
 
 /**
  * @dev Extension of KIP7 that supports permissioned token minting
- * See https://kips.kaia.foundation/KIPs/kip-7#minting-extension
+ * See https://kips.kaia.io/KIPs/kip-7#minting-extension
  */
 abstract contract KIP7Mintable is KIP7, AccessControlEnumerable, IKIP7Mintable {
     bytes32 public constant MINTER_ROLE = keccak256("KIP7_MINTER_ROLE");

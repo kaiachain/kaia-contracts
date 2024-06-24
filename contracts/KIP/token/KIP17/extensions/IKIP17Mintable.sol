@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @dev Minting extension of the KIP17 standard as defined in the KIP.
- * See https://kips.kaia.foundation/KIPs/kip-17#minting-extension
+ * See https://kips.kaia.io/KIPs/kip-17#minting-extension
  */
 interface IKIP17Mintable {
     /**

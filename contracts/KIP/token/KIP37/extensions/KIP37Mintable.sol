@@ -10,7 +10,7 @@ import "../../../../access/AccessControlEnumerable.sol";
 
 /**
  * @dev Extension of KIP37 that supports permissioned token type creation and token minting
- * See http://kips.kaia.foundation/KIPs/kip-37#minting-extension
+ * See http://kips.kaia.io/KIPs/kip-37#minting-extension
  */
 abstract contract KIP37Mintable is KIP37, KIP37URIStorage, IKIP37Mintable, AccessControlEnumerable {
     bytes32 public constant MINTER_ROLE = keccak256("KIP37_MINTER_ROLE");

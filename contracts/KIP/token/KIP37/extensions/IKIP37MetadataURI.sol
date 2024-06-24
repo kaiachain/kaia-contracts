@@ -9,7 +9,7 @@ import "../IKIP37.sol";
 
 /**
  * @dev Interface of the optional KIP37Metadata Extension interface, as defined
- * in the http://kips.kaia.foundation/KIPs/kip-37#metadata-extension[KIP].
+ * in the http://kips.kaia.io/KIPs/kip-37#metadata-extension[KIP].
  *
  */
 interface IKIP37MetadataURI is IKIP37 {

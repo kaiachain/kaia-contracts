@@ -7,7 +7,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the KIP7 standard as defined in the KIP.
- * See http://kips.kaia.foundation/KIPs/kip-7-fungible_token
+ * See http://kips.kaia.io/KIPs/kip-7-fungible_token
  */
 interface IKIP7 {
     /**

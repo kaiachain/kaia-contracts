@@ -9,7 +9,7 @@ import "../IKIP17.sol";
 
 /**
  * @title KIP-17 Non-Fungible Token Standard, optional metadata extension
- * @dev See https://kips.kaia.foundation/KIPs/kip-17#metadata-extension
+ * @dev See https://kips.kaia.io/KIPs/kip-17#metadata-extension
  */
 interface IKIP17Metadata is IKIP17 {
     /**

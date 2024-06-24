@@ -19,7 +19,7 @@
     "security",
     "zeppelin"
   ],
-  "author": "Kaia Community <developer@kaia.foundation>",
+  "author": "Kaia Community <developer@kaia.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaiachain/kaia-contracts/issues"

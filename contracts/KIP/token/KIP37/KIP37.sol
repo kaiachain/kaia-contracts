@@ -15,7 +15,7 @@ import "../../utils/introspection/KIP13.sol";
 
 /**
  * @dev Implementation of the basic standard multi-token.
- * See http://kips.kaia.foundation/KIPs/kip-37
+ * See http://kips.kaia.io/KIPs/kip-37
  * Originally based on code by Enjin: https://github.com/enjin/erc-1155
  *
  */
@@ -57,7 +57,7 @@ contract KIP37 is Context, KIP13, IKIP37, IKIP37MetadataURI {
      *
      * This implementation returns the same URI for *all* token types. It relies
      * on the token type ID substitution mechanism
-     * http://kips.kaia.foundation/KIPs/kip-37#metadata-extension[defined in the KIP].
+     * http://kips.kaia.io/KIPs/kip-37#metadata-extension[defined in the KIP].
      *
      * Clients calling this function must replace the `\{id\}` substring with the
      * actual token type ID.
@@ -245,7 +245,7 @@ contract KIP37 is Context, KIP13, IKIP37, IKIP37MetadataURI {
     /**
      * @dev Sets a new URI for all token types, by relying on the token type ID
      * substitution mechanism
-     * http://kips.kaia.foundation/KIPs/kip-37#metadata-extension[defined in the KIP].
+     * http://kips.kaia.io/KIPs/kip-37#metadata-extension[defined in the KIP].
      *
      * By this mechanism, any occurrence of the `\{id\}` substring in either the
      * URI or any of the amounts in the JSON file at said URI will be replaced by

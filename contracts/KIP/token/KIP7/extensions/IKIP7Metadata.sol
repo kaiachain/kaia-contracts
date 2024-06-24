@@ -9,7 +9,7 @@ import "../IKIP7.sol";
 
 /**
  * @dev Extension of {KIP7} which exposes metadata functions.
- * See https://kips.kaia.foundation/KIPs/kip-7#metadata-extension
+ * See https://kips.kaia.io/KIPs/kip-7#metadata-extension
  */
 interface IKIP7Metadata is IKIP7 {
     /**

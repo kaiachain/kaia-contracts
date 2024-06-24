@@ -7,7 +7,7 @@
 **A library for secure smart contract development.** Build on a solid foundation of community-vetted code.
 It is a fork of openzepplin contracts. In addition to that, this repository contains Kaia's token standards such as KIP-7, KIP-17, and KIP-37 compatible with ERC-20, ERC-721, and ERC-1155 respectively.
 
-Please refer to [this](https://kips.kaia.foundation/token) link for the mapping of Ethereum to Kaia token standards.
+Please refer to [this](https://kips.kaia.io/token) link for the mapping of Ethereum to Kaia token standards.
 
 ## Overview
 
@@ -46,7 +46,7 @@ In line with our commitment to decentralization, all Kaia codebase and its docum
 
 ## Need Help? <a href="#need-help" id="need-help"></a>
 
-If you have any questions, please visit our [Gitter channel](https://gitter.im/kaiachain/kaia-contracts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge), [Kaia Developers Forum](https://forum.kaia.foundation/) and [Discord channel](https://discord.gg/kaiachain).
+If you have any questions, please visit our [Gitter channel](https://gitter.im/kaiachain/kaia-contracts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge), [Kaia Developers Forum](https://forum.kaia.io/) and [Discord channel](https://discord.gg/kaiachain).
 
 ## License
 

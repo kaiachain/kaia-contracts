@@ -9,7 +9,7 @@ import "../../utils/introspection/IKIP13.sol";
 
 /**
  * @dev Required interface of an KIP37 compliant contract, as defined in the
- * http://kips.kaia.foundation/KIPs/kip-37#kip37-interface[KIP].
+ * http://kips.kaia.io/KIPs/kip-37#kip37-interface[KIP].
  *
  */
 interface IKIP37 is IKIP13 {
@@ -46,7 +46,7 @@ interface IKIP37 is IKIP13 {
      * @dev Emitted when the URI for token type `id` changes to `value`, if it is a non-programmatic URI.
      *
      * If an {URI} event was emitted for `id`, the standard
-     * http://kips.kaia.foundation/KIPs/kip-37#metadata-extension[guarantees] that `value` will equal the value
+     * http://kips.kaia.io/KIPs/kip-37#metadata-extension[guarantees] that `value` will equal the value
      * returned by {IKIP37Metadata-uri}.
      */
     event URI(string value, uint256 indexed id);
