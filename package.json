@@ -2,7 +2,6 @@
   "name": "@kaiachain/contracts",
   "description": "Secure Smart Contract library for Solidity",
   "version": "0.0.1",
-  "private": false,
   "files": [
     "/contracts/**/*.sol",
     "/build/contracts/*.json",
