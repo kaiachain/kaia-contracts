@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP7/IKIP7.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP7/IKIP7.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC20/IERC20.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
@@ -7,7 +7,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the KIP7 standard as defined in the KIP.
- * See http://kips.klaytn.com/KIPs/kip-7-fungible_token
+ * See http://kips.kaia.io/KIPs/kip-7-fungible_token
  */
 interface IKIP7 {
     /**

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP37/extensions/IKIP37Mintable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP37/extensions/IKIP37Mintable.sol)
 
 pragma solidity ^0.8.0;
 
 /**
  * @dev Minting extension of the KIP37 standard as defined in the KIP.
- * See http://kips.klaytn.com/KIPs/kip-37#minting-extension
+ * See http://kips.kaia.io/KIPs/kip-37#minting-extension
  */
 interface IKIP37Mintable {
     /**

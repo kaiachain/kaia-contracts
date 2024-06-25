@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/utils/introspection/KIP13Storage.sol)
+// Kaia Contract Library v1.0.0 (KIP/utils/introspection/KIP13Storage.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (utils/introspection/ERC165Storage.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 

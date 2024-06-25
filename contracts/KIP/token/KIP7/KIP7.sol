@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP7/KIP7.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP7/KIP7.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC20/ERC20.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
@@ -33,7 +33,7 @@ import "./IKIP7Receiver.sol";
  * functions have been added to mitigate the well-known issues around setting
  * allowances. See {IKIP7-approve}.
  *
- * See http://kips.klaytn.com/KIPs/kip-7-fungible_token
+ * See http://kips.kaia.io/KIPs/kip-7-fungible_token
  */
 contract KIP7 is Context, KIP13, IKIP7, IKIP7Metadata {
     using Address for address;

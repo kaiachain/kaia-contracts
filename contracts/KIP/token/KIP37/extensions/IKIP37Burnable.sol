@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP37/extensions/IKIP37Burnable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP37/extensions/IKIP37Burnable.sol)
 
 pragma solidity ^0.8.0;
 
 /**
  * @title KIP37 Non-Fungible Token Standard, optional burnable extension
- * @dev See http://kips.klaytn.com/KIPs/kip-37#burning-extension
+ * @dev See http://kips.kaia.io/KIPs/kip-37#burning-extension
  */
 interface IKIP37Burnable {
     /**

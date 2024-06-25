@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP17/extensions/IKIP17Pausable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP17/extensions/IKIP17Pausable.sol)
 
 pragma solidity ^0.8.0;
 
 /**
  * @dev Pausing extension of the KIP17 standard as defined in the KIP.
- * See https://kips.klaytn.com/KIPs/kip-17#enumeration-extension
+ * See https://kips.kaia.io/KIPs/kip-17#enumeration-extension
  */
 interface IKIP17Pausable {
     /**

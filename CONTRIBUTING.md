@@ -1,8 +1,8 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing to Klaytn Contracts. As an open source project, Klaytn Contracts is always open to the developer community and we welcome your contribution to help more developer onboarding resources for the Klaytn developer community. Please read the guideline below and follow it in all interactions with the project.
+Thank you for your interest in contributing to Kaia Contracts. As an open source project, Kaia Contracts is always open to the developer community and we welcome your contribution to help more developer onboarding resources for the Kaia developer community. Please read the guideline below and follow it in all interactions with the project.
 
-## How to Contribute on Klaytn Docs
+## How to Contribute on Kaia Docs
 
 1. Read this [contributing document](./CONTRIBUTING.md).
 2. Sign [Contributor Licensing Agreement (CLA)](#contributor-license-agreement-cla).
@@ -22,24 +22,24 @@ There are various ways to contribute and participate. Please read the guidelines
 
 ### Issues and Bugs
 
-If you find a bug or other issues in Klaytn, please [submit an issue](https://github.com/klaytn/klaytn-contracts/issues). Before submitting an issue, please invest some extra time to figure out that:
+If you find a bug or other issues in Kaia, please [submit an issue](https://github.com/kaiachain/kaia-contracts/issues). Before submitting an issue, please invest some extra time to figure out that:
 
 - The issue is not a duplicate issue.
-- The issue has not been fixed in the latest release of Klaytn Contracts.
-Please do not use the issue tracker for personal support requests. Use developer@klaytn.foundation for the personal support requests.
+- The issue has not been fixed in the latest release of Kaia Contracts.
+Please do not use the issue tracker for personal support requests. Use developer@kaia.io for the personal support requests.
 
 When you report a bug, please make sure that your report has the following information.
 - Steps to reproduce the issue.
 - A clear and complete description of the issue.
 - Code and/or screen captures are highly recommended.
 
-After confirming your report meets the above criteria, [submit the issue](https://github.com/klaytn/klaytn-contracts/issues). Please use [labels](#usage-of-labels) to categorize your issue.
+After confirming your report meets the above criteria, [submit the issue](https://github.com/kaiachain/kaia-contracts/issues). Please use [labels](#usage-of-labels) to categorize your issue.
 
 ### Feature Requests
 
-You can also use the [issue tracker](https://github.com/klaytn/klaytn-contracts/issues) to request a new feature or enhancement. Note that any code contribution without an issue link will not be accepted. 
+You can also use the [issue tracker](https://github.com/kaiachain/kaia-contracts/issues) to request a new feature or enhancement. Note that any code contribution without an issue link will not be accepted. 
 
-Please submit an issue explaining your proposal first so that the Klaytn developer community can fully understand and discuss the idea. Please use [labels](#usage-of-labels) for your feature request as well.
+Please submit an issue explaining your proposal first so that the Kaia developer community can fully understand and discuss the idea. Please use [labels](#usage-of-labels) for your feature request as well.
 
 ### Code Contribution 
 
@@ -70,14 +70,14 @@ As a contributor, you are expected to fork this repository, work on your own for
 1) Make sure your fork is up to date with the main repository:
 
 ```
-cd klaytn-contracts
-git remote add upstream https://github.com/klaytn/klaytn-contracts.git
+cd kaia-contracts
+git remote add upstream https://github.com/kaiachain/kaia-contracts.git
 git fetch upstream
-git pull --rebase upstream master
+git pull --rebase upstream main
 ```
-NOTE: The directory `klaytn-contracts` represents your fork's local copy.
+NOTE: The directory `kaia-contracts` represents your fork's local copy.
 
-2) Branch out from `master` into `fix/some-bug-#123`/`feature/add-timelock`. 
+2) Branch out from `main` into `fix/some-bug-#123`/`feature/add-timelock`. 
 
 ```
 git checkout -b fix/some-bug-#123
@@ -98,12 +98,12 @@ npm run lint:fix
 npm run lint
 ```
 
-5) Create a new pull request. If its a issue, make sure you link the issue in the [Related issues](https://github.com/klaytn/klaytn-contracts/blob/4b9efe2976d892e11f839bd3e05739226d4fd81f/.github/PULL_REQUEST_TEMPLATE.md)
+5) Create a new pull request. If its a issue, make sure you link the issue in the [Related issues](https://github.com/kaiachain/kaia-contracts/blob/4b9efe2976d892e11f839bd3e05739226d4fd81f/.github/PULL_REQUEST_TEMPLATE.md)
 
 *IMPORTANT* Read the PR template very carefully and make sure to follow all the instructions. These instructions
 refer to some very important conditions that your PR must meet in order to be accepted, such as making sure that all tests pass, JS linting tests pass, Solidity linting tests pass, etc.
 
-6) Maintainers will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of Klaytn Contracts.
+6) Maintainers will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of Kaia Contracts.
 
 
 #### Usage of Labels
@@ -114,7 +114,7 @@ Labels for initial issue categories:
 
 - issue/bug: Issues with the code-level bugs.
 - issue/enhancement: Issues for enhancement requests.
-- issue/questions: Questions to klaytn contracts and other issues not related to bug or enhancement.
+- issue/questions: Questions to kaia contracts and other issues not related to bug or enhancement.
 
 Status of open issues (will be tagged by the project moderators):
 

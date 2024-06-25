@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP37/extensions/KIP37Supply.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP37/extensions/KIP37Supply.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC1155/extensions/ERC1155Supply.sol)
 // as per standard KIP37 totalSupply function already implemented at ../KIP31.sol thus here only implemented exists function
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0

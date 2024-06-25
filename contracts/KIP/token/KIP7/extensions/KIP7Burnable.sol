@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/token/KIP7/extensions/KIP7Burnable.sol)
+// Kaia Contract Library v1.0.0 (KIP/token/KIP7/extensions/KIP7Burnable.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (token/ERC20/extensions/ERC20Burnable.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
@@ -13,7 +13,7 @@ import "./IKIP7Burnable.sol";
  * @dev Extension of KIP7 that allows token holders to destroy both their own
  * tokens and those that they have an allowance for, in a way that can be
  * recognized off-chain (via event analysis).
- * See https://kips.klaytn.com/KIPs/kip-7#burning-extension
+ * See https://kips.kaia.io/KIPs/kip-7#burning-extension
  */
 abstract contract KIP7Burnable is Context, KIP7, IKIP7Burnable {
     /**

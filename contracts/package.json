@@ -1,7 +1,7 @@
 {
-  "name": "@klaytn/contracts",
+  "name": "@kaiachain/contracts",
   "description": "Secure Smart Contract library for Solidity",
-  "version": "1.0.6",
+  "version": "0.0.1",
   "files": [
     "**/*.sol",
     "/build/contracts/*.json",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/klaytn/klaytn-contracts.git"
+    "url": "https://github.com/kaiachain/kaia-contracts.git"
   },
   "keywords": [
     "solidity",
@@ -19,10 +19,10 @@
     "security",
     "zeppelin"
   ],
-  "author": "Klaytn Community <developer@klaytn.foundation>",
+  "author": "Kaia Community <developer@kaia.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/klaytn/klaytn-contracts/issues"
+    "url": "https://github.com/kaiachain/kaia-contracts/issues"
   },
-  "homepage": "https://github.com/klaytn/klaytn-contracts#readme"
+  "homepage": "https://github.com/kaiachain/kaia-contracts#readme"
 }

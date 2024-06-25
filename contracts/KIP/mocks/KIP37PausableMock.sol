@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Klaytn Contract Library v1.0.0 (KIP/mocks/KIP37PausableMock.sol)
+// Kaia Contract Library v1.0.0 (KIP/mocks/KIP37PausableMock.sol)
 // Based on OpenZeppelin Contracts v4.5.0 (mocks/ERC1155PausableMock.sol)
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
